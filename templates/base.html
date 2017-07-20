@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PVXM8BL');</script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	{% if title %}
+    <title>{{title}} | Warm Cheap Holidays</title>
+    {% else %}
+    <title>Warm Cheap Holidays</title>
+    {% endif %}
+	<meta name="description" content="The easy-to-use destination finder for warm, cheap holidays across the world." />
+	<meta name="author" content="Alex Smith" />
+	<!-- Favicons (created with https://realfavicongenerator.net/)-->
+	<link rel="apple-touch-icon" sizes="57x57" href="static/img/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="static/img/favicons/apple-touch-icon-60x60.png">
+	<link rel="icon" type="image/png" href="static/img/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="static/img/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="static/img/favicons/manifest.json">
+	<link rel="shortcut icon" href="static/img/favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#00a8ff">
+	<meta name="msapplication-config" content="static/img/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<!-- Normalize -->
+	<link rel="stylesheet" type="text/css" href="static/css/normalize.css">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="static/css/bootstrap.css">
+	<!-- Owl -->
+	<link rel="stylesheet" type="text/css" href="static/css/owl.css">
+	<!-- Animate.css -->
+	<link rel="stylesheet" type="text/css" href="static/css/animate.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" type="text/css" href="static/fonts/font-awesome-4.1.0/css/font-awesome.min.css">
+	<!-- Elegant Icons -->
+	<link rel="stylesheet" type="text/css" href="static/fonts/eleganticons/et-icons.css">
+	<!-- Main style -->
+	<link rel="stylesheet" type="text/css" href="static/css/wch.css">
+</head>
+
+<body>
+	<!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVXM8BL"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+	<div class="preloader">
+		<img src="static/img/loader.gif" alt="Preloader image">
+	</div>
+	<nav class="navbar">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="static/img/logo.png" data-active-url="static/img/logo-active.png" alt=""></a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right main-nav">
+					<li><a href="#search">Search</a></li>
+					<li><a href="#inspiration">Inspiration</a></li>
+					<li class="social"><a href="https://www.twitter.com/WarmCheapHdays" target="blank"><i class="fa fa-twitter fa-2x social"></i></a></li>
+					<li class="social"><a href="https://www.instagram.com/warmcheapholidays" target="blank"><i class="fa fa-instagram fa-2x social"></i></a></li>
+					<li><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">Newsletter</a></li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+	
+	{% block content %}
+	{% endblock %}
+	
+	<footer>
+		<div class="container">
+			<!--
+			<div class="row">
+				<div class="col-sm-6 text-center-mobile">
+					<h3 class="white">Reserve a Free Trial Class!</h3>
+					<h5 class="light regular light-white">Shape your body and improve your health.</h5>
+					<a href="#" class="btn btn-blue ripple trial-button">Start Free Trial</a>
+				</div>
+				<div class="col-sm-6 text-center-mobile">
+					<h3 class="white">Opening Hours <span class="open-blink"></span></h3>
+					<div class="row opening-hours">
+						<div class="col-sm-6 text-center-mobile">
+							<h5 class="light-white light">Mon - Fri</h5>
+							<h3 class="regular white">9:00 - 22:00</h3>
+						</div>
+						<div class="col-sm-6 text-center-mobile">
+							<h5 class="light-white light">Sat - Sun</h5>
+							<h3 class="regular white">10:00 - 18:00</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			-->
+			<div class="row bottom-footer text-center-mobile">
+				<div class="col-sm-8">
+					<p>&copy; 2017 All Rights Reserved.</p>
+				</div>
+				<div class="col-sm-4 text-right text-center-mobile">
+					<ul class="social-footer">
+						<li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.twitter.com/WarmCheapHdays"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.instagram.com/warmcheapholidays"><i class="fa fa-instagram"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Holder for mobile navigation -->
+	<div class="mobile-nav">
+		<ul>
+		</ul>
+		<a href="#" class="close-link"><i class="arrow_up"></i></a>
+	</div>
+	<!-- Scripts -->
+	<script src="static/js/jquery-1.11.1.min.js"></script>
+	<script src="static/js/owl.carousel.min.js"></script>
+	<script src="static/js/bootstrap.min.js"></script>
+	<script src="static/js/wow.min.js"></script>
+	<script src="static/js/typewriter.js"></script>
+	<script src="static/js/jquery.onepagenav.js"></script>
+	<script src="static/js/main.js"></script>
+</body>
+
+</html>

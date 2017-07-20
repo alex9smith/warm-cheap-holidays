@@ -1,0 +1,162 @@
+{% extends "base.html" %}
+
+{% block content %}
+<header id="intro">
+		<div class="container">
+			<div class="table">
+				<div class="header-text">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<h1 class="light white" style="font-size: 30px">Warm Cheap Holidays</h1>
+							<h3 class="white typed" style="font-size: 60px">Where would you like to go?</h3>
+							<span class="typed-cursor">|</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="section section-search" id="search">
+		<div class="cut cut-top cut-top-blue"></div>
+		<div class="container">
+			<div class='row'>
+				<div class='search-box'>
+					<form method='POST' action='/search' id='search-form'>
+					<div class='col-md-4'>
+						<div class="month-box">
+							<select name='month' form='search-form'>
+							    <option value='jan'>Jan</option>
+							    <option value='feb'>Feb</option>
+							    <option value='mar'>Mar</option>
+							    <option value='apr'>Apr</option>
+							    <option value='may'>May</option>
+							    <option value='jun'>Jun</option>
+							    <option value='jul'>Jul</option>
+							    <option value='aug'>Aug</option>
+							    <option value='sep'>Sep</option>
+							    <option value='oct'>Oct</option>
+							    <option value='nov'>Nov</option>
+							    <option value='dec'>Dec</option>
+							</select>
+						</div>
+					</div>
+					<div class='col-md-4'>
+						<div class="low-temp-box">
+							<select name='low' form='search-form'>
+							    <option value='0'>0</option>
+							    <option value='5'>5</option>
+							    <option value='10'>10</option>
+							    <option value='15'>15</option>
+							    <option value='20'>20</option>
+							    <option value='25'>25</option>
+							    <option value='30'>30</option>
+							</select>
+						</div>
+					</div>
+					
+					<div class='col-md-4'>
+						<div class="high-temp-box">
+							<select name='high' form='search-form'>
+							    <option value='5'>5</option>
+							    <option value='10'>10</option>
+							    <option value='15'>15</option>
+							    <option value='20'>20</option>
+							    <option value='25'>25</option>
+							    <option value='30'>30</option>
+							    <option value='35'>35</option>
+							</select>
+						</div>
+					</div>
+					<div class='col-md-4 col-md-offset-4'>
+						<input type='submit' value='Search' class='btn btn-orange btn-block search-column'>
+					</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="cut cut-bottom cut-bottom-blue"></div>
+	</section>
+	<section id="inspiration" class="section section-padded">
+		<div class="container">
+			<div class="row text-center title">
+				<h2>Articles</h2>
+				<h4 class="light muted">Discover your travel inspiration.</h4>
+			</div>
+			<div class="row services">
+				<div class="col-md-4">
+					<div class="service">
+						<div class="icon-holder">
+							<img src="static/img/icons/heart-blue.png" alt="" class="icon">
+						</div>
+						<h4 class="heading">Southern France</h4>
+						<p class="description">The intro text to an article about Southern France</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="service">
+						<div class="icon-holder">
+							<img src="static/img/icons/guru-blue.png" alt="" class="icon">
+						</div>
+						<h4 class="heading">Indonesia</h4>
+						<p class="description">The intro text to an article about Indonesia</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="service">
+						<div class="icon-holder">
+							<img src="static/img/icons/weight-blue.png" alt="" class="icon">
+						</div>
+						<h4 class="heading">Spain</h4>
+						<p class="description">The intro text to an article about Spain</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cut cut-bottom cut-bottom-white"></div>
+	</section> 	
+	<section class="section section-padded blue-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="owl-twitter owl-carousel">
+						<div class="item text-center">
+							<i class="icon fa fa-twitter"></i>
+							<h4 class="white light">To enjoy the glow of good health, you must exercise.</h4>
+							<h4 class="light-white light">#health #training #exercise</h4>
+						</div>
+						<div class="item text-center">
+							<i class="icon fa fa-twitter"></i>
+							<h4 class="white light">To enjoy the glow of good health, you must exercise.</h4>
+							<h4 class="light-white light">#health #training #exercise</h4>
+						</div>
+						<div class="item text-center">
+							<i class="icon fa fa-twitter"></i>
+							<h4 class="white light">To enjoy the glow of good health, you must exercise.</h4>
+							<h4 class="light-white light">#health #training #exercise</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content modal-popup">
+				<a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
+				<h3 class="white">Sign Up</h3>
+				<form action="" class="popup-form">
+					<input type="text" class="form-control form-white" placeholder="Full Name">
+					<input type="text" class="form-control form-white" placeholder="Email Address">
+					<div class="checkbox-holder text-left">
+						<div class="checkbox">
+							<input type="checkbox" value="None" id="squaredOne" name="check" />
+							<label for="squaredOne"><span>I Agree to the <strong>Terms &amp; Conditions</strong></span></label>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-submit">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+{% endblock %}

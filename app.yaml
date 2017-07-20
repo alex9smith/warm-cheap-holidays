@@ -1,0 +1,23 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /.*
+  script: main.app
+
+env_variables:
+    CLOUDSQL_CONNECTION_NAME: warm-cheap-holidays-3783:europe-west1:warm-cheap-holidays-cloud-sql
+    CLOUDSQL_USER: wch
+    CLOUDSQL_PASSWORD: wch
+    CLOUDSQL_DATABASE: warm_cheap_holidays
+    MYSQL_CONNECTION_NAME: alexs.me.uk
+    MYSQL_USER: wch
+    MYSQL_PASSWORD: wch
+    MYSQL_DATABASE: warm_cheap_holidays
+    
+libraries:
+- name: MySQLdb
+  version: "latest"
+- name: ssl
+  version: "latest"
